@@ -1,0 +1,20 @@
+{
+    "emmet.includeLanguages": {
+        "html": "html"
+    },
+    "emmet.triggerExpansionOnTab": true,
+    "emmet.enable": true,
+    "emmet.syntaxProfiles": {
+        "html": {
+            "filters": "html"
+        }
+    },
+    "files.associations": {
+        "*.html": "html"
+    },
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": true
+    }
+} 

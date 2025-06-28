@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="semestre-dropdown">
+      <div class="semestre-header">
+        <h1 class="semestre-title">semestre 01</h1>
+        <span class="semestre-toggle" id="semestre-toggle">
+          <span class="dropdown-arrow">
+            <span class="material-symbols-outlined">keyboard_arrow_down</span>
+          </span>
+        </span>
+      </div>
+      <div class="semestre-content" id="semestre-content">
+        <!-- Content will go here -->
+        <div class="course-card">
+          <div class="course-card-inner">
+            <div class="course-card-title-block">
+              <span class="course-card-title">ESTUDIO DE MAESTRÍA</span>
+              <span class="course-card-credits-block">
+                <span class="course-card-credits">4</span>
+                <span class="course-card-cr">CR</span>
+              </span>
+            </div>
+            <span class="course-card-duration">16 SEMANAS</span>
+          </div>
+        </div>
+        <div class="course-card course-card-black">
+          <div class="course-card-inner">
+            <div class="course-card-title-block">
+              <span class="course-card-title">FUNDAMENTOS</span>
+              <span class="course-card-credits-block">
+                <span class="course-card-credits">4</span>
+                <span class="course-card-cr">CR</span>
+              </span>
+            </div>
+            <span class="course-card-duration course-card-duration-black">16 SEMANAS</span>
+          </div>
+        </div>
+        <!-- Custom Course Card Section inside dropdown -->
+      </div>
+    </div>
+    <!-- Custom Course Card Section OUTSIDE the dropdown -->
+    <section class="custom-course-section">
+      <form id="custom-course-form">
+        <input type="text" id="custom-course-name" placeholder="Nombre del curso" required />
+        <input type="number" id="custom-course-credits" placeholder="Créditos" min="1" required />
+        <select id="custom-course-duration">
+          <option value="8">8 SEMANAS</option>
+          <option value="16">16 SEMANAS</option>
+        </select>
+        <select id="custom-course-color">
+          <option value="blue">Azul</option>
+          <option value="black">Negro</option>
+          <option value="orange">Naranja</option>
+          <option value="cyan">Cian</option>
+          <option value="lilla">Lila</option>
+          <option value="gray">Gris</option>
+        </select>
+        <button type="submit">Crear Curso</button>
+      </form>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
