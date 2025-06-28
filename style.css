@@ -413,7 +413,7 @@ html :where(img) {
     font-size: 1rem;
   }
   .semestre-toggle .material-symbols-outlined {
-    font-size: 1rem;
+    font-size: 2rem;
   }
 }
 
@@ -426,7 +426,7 @@ html :where(img) {
   .semestre-dropdown {
     width: 82vw;
     max-width: 100vw;
-    padding: 2.5vw 4.6vw;
+    padding: 2vw 3vw;
   }
   .course-card {
     width: 67.9vw;
@@ -454,7 +454,7 @@ html :where(img) {
     top: auto;
   }
   .semestre-title {
-    font-size: 4.1vw;
+    font-size: 3vw;
   }
   .semestre-toggle .material-symbols-outlined {
     font-size: 4.8vw;
@@ -470,7 +470,7 @@ html :where(img) {
   .semestre-dropdown {
     width: 40vw;
     max-width: 500px;
-    padding: 2vw 3vw;
+    padding: 1vw 3vw;
   }
   .course-card {
     width: 35vw;
@@ -576,6 +576,7 @@ html :where(img) {
   gap: 1vw;
 }
 #custom-course-form {
+  padding:10vw;
   display: flex;
   flex-wrap: wrap;
   gap: 1vw;
