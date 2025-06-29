@@ -1,40 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Meta tags -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Componente Cursos</title>
+
+    <!-- Favicon y recursos externos -->
     <link rel="icon" type="image/x-icon" href="icon.ico" />
     <link rel="stylesheet" href="style.css" />
+    <!-- Fuentes de Google: Roboto Mono para texto y Material Symbols para iconos -->
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Material+Symbols+Outlined"
       rel="stylesheet"
     />
   </head>
   <body>
+    <!-- Contenedor principal del dropdown del semestre -->
     <div class="semestre-dropdown">
+      <!-- Encabezado del dropdown con título y botón de toggle -->
       <div class="semestre-header">
         <h1 class="semestre-title">semestre 01</h1>
+        <!-- Botón para abrir/cerrar el dropdown -->
         <span class="semestre-toggle" id="semestre-toggle">
           <span class="dropdown-arrow">
+            <!-- Icono de flecha hacia abajo (Material Symbols) -->
             <span class="material-symbols-outlined">keyboard_arrow_down</span>
           </span>
         </span>
       </div>
+
+      <!-- Contenido del dropdown (se muestra/oculta con JavaScript) -->
       <div class="semestre-content" id="semestre-content">
-        <!-- Content will go here -->
+        <!-- Tarjeta de curso 1: Estudio de Maestría (color azul por defecto) -->
         <div class="course-card">
           <div class="course-card-inner">
             <div class="course-card-title-block">
               <span class="course-card-title">ESTUDIO DE MAESTRÍA</span>
+              <!-- Bloque de créditos con número y etiqueta -->
               <span class="course-card-credits-block">
                 <span class="course-card-credits">4</span>
                 <span class="course-card-cr">CR</span>
               </span>
             </div>
+            <!-- Etiqueta de duración (posicionada absolutamente) -->
             <span class="course-card-duration">16 SEMANAS</span>
           </div>
         </div>
+
+        <!-- Tarjeta de curso 2: Fundamentos (color negro) -->
         <div class="course-card course-card-black">
           <div class="course-card-inner">
             <div class="course-card-title-block">
@@ -44,22 +58,41 @@
                 <span class="course-card-cr">CR</span>
               </span>
             </div>
-            <span class="course-card-duration course-card-duration-black">16 SEMANAS</span>
+            <span class="course-card-duration course-card-duration-black"
+              >16 SEMANAS</span
+            >
           </div>
         </div>
-        <!-- Custom Course Card Section inside dropdown -->
+        <!-- Las nuevas tarjetas de curso se agregarán dinámicamente aquí -->
       </div>
     </div>
-    <!-- Custom Course Card Section OUTSIDE the dropdown -->
+
+    <!-- Sección para crear cursos personalizados (fuera del dropdown) -->
     <section class="custom-course-section">
+      <!-- Formulario para crear nuevos cursos -->
       <form id="custom-course-form">
-        <input type="text" id="custom-course-name" placeholder="Nombre del curso" required />
-        <input type="number" id="custom-course-credits" placeholder="Créditos" min="1" required />
+        <!-- Campo para el nombre del curso -->
+        <input
+          type="text"
+          id="custom-course-name"
+          placeholder="Nombre del curso"
+          required
+        />
+        <!-- Campo para el número de créditos -->
+        <input
+          type="number"
+          id="custom-course-credits"
+          placeholder="Créditos"
+          min="1"
+          required
+        />
+        <!-- Selector de duración del curso -->
         <select id="custom-course-duration">
           <option value="8A">CICLO 8A</option>
           <option value="8B">CICLO 8B</option>
           <option value="16">16 SEMANAS</option>
         </select>
+        <!-- Selector de color para la tarjeta -->
         <select id="custom-course-color">
           <option value="blue">Azul</option>
           <option value="black">Negro</option>
@@ -68,9 +101,12 @@
           <option value="lilla">Lila</option>
           <option value="gray">Gris</option>
         </select>
+        <!-- Botón para crear el curso -->
         <button type="submit">Crear Curso</button>
       </form>
     </section>
+
+    <!-- Script de JavaScript para la funcionalidad -->
     <script src="script.js"></script>
   </body>
 </html>
