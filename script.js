@@ -39,6 +39,10 @@ document.addEventListener('DOMContentLoaded', function() {
       const duration = document.getElementById('custom-course-duration').value;
       const color = document.getElementById('custom-course-color').value;
       const colorClass = `course-card-color-${color}`;
+      let durationText = '';
+      if (duration === '8A') durationText = 'CICLO 8A';
+      else if (duration === '8B') durationText = 'CICLO 8B';
+      else durationText = '16 SEMANAS';
       const cardHTML = `
         <div class="course-card ${colorClass}">
           <div class="course-card-inner">
@@ -49,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <span class="course-card-cr">CR</span>
               </span>
             </div>
-            <span class="course-card-duration">${duration} SEMANAS</span>
+            <span class="course-card-duration">${durationText}</span>
           </div>
         </div>
       `;
